@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>Table Of Contents</title>
     <style>
-        .container {
+        .container{
             width: 1080px;
             margin: auto;
-
-
         }
+        .header{
+            background-color: lemonchiffon;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+        }
+
+        .header h1{
+            padding-top: 50px;
+        }
+
         .navbar ul{
             list-style-type: none;
             margin: 0;
@@ -29,29 +38,18 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+
         .navbar ul li a:hover{
             background-color: #111;
         }
+
         .content{
             width: 100%;
 
         }
-        .right{
-            width: 100%;
-        }
-        .header {
-            background-color: lemonchiffon;
-            width: 100%;
-            height: 150px;
-            text-align: center;
-        }
-
-        .header h1 {
-            padding-top: 50px;
-        }
 
         .card{
-            width: 26%;
+            width: 46%;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: .3s;
             float: left;
@@ -67,14 +65,15 @@
         img{
             width: 200px;
             height: 200px;
+
         }
     </style>
 </head>
 <body>
-<div class="Container">
+<div class="container">
     <div class="header">
-<h1>Table of Contents</h1>
-</div>
+        <h1>Table of Contents</h1>
+    </div>
     <div class="navbar">
         <ul>
             <li><a href="basicTargeting.html">Basic Targeting</a></li>
@@ -82,15 +81,16 @@
             <li><a href="3columnLayout.html">3-Column Layout</a></li>
             <li><a href="boxModel.html">Box Model</a></li>
             <li><a href="cards.html">Cards Example</a></li>
+            <li><a href="Tables.html">Tables</a></li>
         </ul>
     </div>
     <div class="content">
-        <p>Image Example</p>
+        <p>Here are some examples of image manipulations in CSS.  See the links on this page for more information and examples.</p>
         <div class="card">
             <img src="img/powerUp.jfif" alt="Aaaaaaaaahhhhhhhh!!!!!!" />
             <div class="caption">
                 <h4><b>Powering Up</b></h4>
-                <p>When SS1 just isn't enough...</p>
+                <p>More than SS1...</p>
             </div>
         </div>
 
@@ -105,12 +105,11 @@
     <div class="right">
         Right
     </div>
+
     <div class="footer">
-        Footer.exe
+        Copyright © 2025 Vernon Township School District . All rights reserved.
     </div>
 
 </div>
-
-
 </body>
 </html>
