@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: cyan;
+    background-color: #93e6ff;
 }
 
 .navbar ul li{
@@ -30,12 +30,15 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 4px 6px;
     text-decoration: none;
 }
 
 .navbar ul li a:hover{
-    background-color: #111;
+    background-color: #7ae1ff;
+}
+li .food{
+    float: left;
 }
 
 .content{
@@ -47,6 +50,11 @@
 img{
     width: 200px;
     height: 200px;
-
-
 }
+
+#home{
+    width: 100px;
+    height: 100px;
+}
+
+
