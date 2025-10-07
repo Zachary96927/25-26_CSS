@@ -9,8 +9,8 @@
     height: 100px;
 }
 
-.text h1{
-    padding-top: 50px;
+h1{
+    padding: 50px, 50px;
     text-align: center;
 }
 
@@ -20,26 +20,40 @@
     padding: 0;
     overflow: hidden;
     background-color: #93e6ff;
+    align-items: center;
+
+
+
+}
+img{
+    background-color: #93e6ff;
+    width: 193px;
+    height: 140px;
+}
+.navbar ul,img{
+    float: left;
 }
 
 .navbar ul li{
     float: left;
+
 }
 
 .navbar ul li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 4px 6px;
+    padding: 61px 38px;
     text-decoration: none;
+
+
 }
 
 .navbar ul li a:hover{
     background-color: #7ae1ff;
 }
-li .food{
-    float: left;
-}
+
+
 
 .content{
     width: 100%;
@@ -47,14 +61,5 @@ li .food{
 }
 
 
-img{
-    width: 200px;
-    height: 200px;
-}
-
-#home{
-    width: 100px;
-    height: 100px;
-}
 
 
