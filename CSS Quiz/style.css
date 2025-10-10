@@ -1,0 +1,62 @@
+/* Add all your styles here */
+.grid-container{
+    width:100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:1fr 4fr;
+    background-color: #7ae1ff;
+}
+.grid-container > body{
+    background-color: #f1f1f1;
+    padding:20px;
+    text-align: center;
+
+}
+.site-header{
+    background-color: #99CCFF;
+    grid-column: 1/ span 4;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.main-nav{
+    background-color: lightgray;
+    padding: 25px;
+    grid-column: 1/ span 1;
+
+}
+.main-nav ul li {
+    padding: 18px;
+}
+.main-nav ul li a {
+    text-decoration: none;
+}
+
+.site-sidebar{
+    background-color: lightgray;
+    padding: 25px;
+    grid-column: 2/ span 1;
+
+}
+.site-sidebar ul li {
+    padding: 18px;
+}
+.site-sidebar ul li a {
+    text-decoration: none;
+}
+.main-content{
+    grid-column: 2/ span 2;
+    padding: 20px;
+    background-color: white;
+}
+.site-footer{
+    background-color: #3333FF;
+    grid-column: 3/ span 4;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.site-footer p{
+    color: white
+}
