@@ -1,0 +1,139 @@
+/* Add all your styles here */
+body {
+    background: #7ae1ff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.grid-container{
+    width:100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'nav main main site'
+    'footer footer footer footer';
+}
+.grid-container > body{
+    padding:20px;
+    text-align: center;
+
+}
+.site-header{
+    background-color: #99CCFF;
+    grid-area: header;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.main-nav{
+    background-color: lightgray;
+    padding: 25px;
+    grid-area: nav
+
+
+}
+.main-nav ul li {
+    padding: 18px;
+}
+.main-nav ul li a {
+    text-decoration: none;
+}
+
+.site-sidebar{
+    background-color: lightgray;
+    padding: 25px;
+    grid-area: site
+
+}
+.site-sidebar ul li {
+    padding: 18px;
+}
+.site-sidebar ul li a {
+    text-decoration: none;
+}
+.main-content{
+    padding: 20px;
+    background-color: white;
+    grid-area: main;
+
+}
+.site-footer{
+    background-color: #3333FF;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    grid-area: footer;
+}
+.site-footer p{
+    color: white
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        .site-header {
+            grid-area: 1/ span 1;
+        }
+
+        .main-nav {
+            grid-area: 2/ span 1;
+        }
+
+        .main-content {
+            grid-area: 3/ span 1;
+        }
+
+        .site-sidebar {
+            grid-area: 4/ span 1;
+        }
+
+        .site-footer {
+            grid-area: 5/ span 1;
+        }
+
+    }
+
+}
+@media screen and (min-width: 850px) {
+    .body {
+        .site-header {
+            grid-area: 1/ span 4;
+        }
+
+        .main-nav {
+            grid-area: 2/ span 4;
+        }
+
+        .main-content {
+            grid-area: 3/ span 4;
+        }
+
+        .site-sidebar {
+            grid-area: 4/ span 4;
+        }
+
+        .site-footer {grid-area: 5/ span 4;}
+
+    }
+
+
+}
+@media screen and(orientation:landscape) {
+    .body {
+        background-color: #111111;
+        .site-header{
+            color: white;
+        }
+        .main-nav {
+            color: white;
+        }
+        .main-content {
+            color: white;
+        }
+        .site-sidebar {
+            color: white;
+        }
+    }
+}
