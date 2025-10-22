@@ -2,6 +2,46 @@
 <html>
 <head>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        div.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        div.gallery-item{
+            margin:5px;
+            border: 1px solid #ccc;
+            width: 180px;
+        }
+        .gallery-item:hover{
+            border: 1px solid #555;
+        }
+        div.gallery-item img{
+            width: 100%;
+            height: auto;
+        }
+        div.gallery-item div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+            div.gallery-item{
+                width: calc(50% - 20px);
+            }
+            body{
+                background-color: lightgoldenrodyellow;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            div.gallery-item{
+                width: calc(100% - 20px);
+            }
+            body{
+                background-color: lightcoral;
+            }
+        }
 
     </style>
 </head>
@@ -38,6 +78,7 @@
         </a>
         <div class="desc">Mountains</div>
     </div>
+
 
 </div>
 
