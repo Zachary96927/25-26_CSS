@@ -8,9 +8,7 @@
     display: grid;
     grid-template-areas:
             'header header header header header header header header header header'
-            'menu main main main main right'
-            'footer footer footer footer footer footer ';
-
+            'footer footer footer footer footer footer footer footer footer footer';
     gap: 10px;
     padding: 10px;
     background-color: #c7f2ff;
@@ -34,7 +32,8 @@
         padding: 50px;
         text-align: center;
     }
-
+    .navbar{
+    }
     .navbar ul{
         list-style-type: none;
         margin: 0;
@@ -42,6 +41,7 @@
         overflow: hidden;
         background-color: #93e6ff;
         align-items: center;
+
 
 
 
@@ -59,6 +59,12 @@
         float: left;
 
     }
+    .roboto-slab-navbar-ul-li {
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
 
     .navbar ul li a{
         display: block;
@@ -66,6 +72,7 @@
         text-align: center;
         padding: 61px 38px;
         text-decoration: none;
+        font-family: "Roboto Mono", "Times New Roman", serif;
 
 
     }
@@ -79,6 +86,12 @@
     .content{
         width: 100%;
 
+    }
+    .content p{
+        text-align: center;
+        background-color: #BBF2FF;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 160px;
     }
 
 
