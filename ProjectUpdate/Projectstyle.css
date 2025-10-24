@@ -1,3 +1,6 @@
+body{
+    background-color: #C6F2FF;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -91,7 +94,13 @@
         text-align: center;
         background-color: #BBF2FF;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 160px;
+        padding: 16px;
+    }
+
+    .content img{
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        gap: 16px;
     }
 
 

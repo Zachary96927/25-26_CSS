@@ -1,10 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="Projectstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<table border="1" style = "width:100%">
+    <tr>
+        <th width="5"><a href="Main.html"><img src="Images/Logo.png" alt = "5" width="317" height="158"/></a></th>
+        <th><a href="Burgers.html" title="Burgers">Burgers</a></th>
+        <th><a href="Wraps.html" title="Wraps">Wraps</a></th>
+        <th><a href="Specials.html" title="Daily Specials">Daily Specials</a></th>
+        <th><a href="Sides.html" title="Sides">Sides</a></th>
+        <th><a href="Drinks.html" title="Drinks">Drinks</a></th>
+        <th><a href="Desserts.html" title="Desserts">Desserts</a></th>
+        <th><a href="Order.html" title="Order">Order</a></th>
+    </tr>
+</table>
+<h1>Contact us with any problems you may have</h1>
+<dl>
+    <dt>Order online</dt>
+    <dd><label for="name">Name:</label><input type="text" name="name" id="name" placeholder="John Smith"/> <br /></dd>
+    <dd><label for="phone">Phone:</label><input type="tel" name="phone" id="phone" pattern="[0-9]{3} - [0-9]{3}-[0-9]{4}"
+                                                placeholder="123-456-7890"/></dd>
+    <dd><label for="date">Date of Order</label><input type="date" name="date" id="date"/> <br /> </dd>
+
+
+    <dd><label for="question">Name any requests about the food or allergies:</label><br />
+        <textarea name="question" id="question" rows="10" cols="50">Optional</textarea><br />
+        <input type="submit"/></dd>
+
+
+
+    <dt>If you have any problems</dt>
+    <dd>845-856-9760</dd>
+
+
+</dl>
 
 </body>
 </html>
