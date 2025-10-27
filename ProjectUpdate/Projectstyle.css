@@ -6,103 +6,109 @@ body{
     margin: 0;
 }
 
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+div.gallery-item img{
+    width: 100px;
 
 .grid-container{
     display: grid;
     grid-template-areas:
-            'header header header header header header header header header header'
-            'footer footer footer footer footer footer footer footer footer footer';
+   'home nav nav nav nav nav nav nav'
+   'header header header header header header header header'
+   'text text text text text text text text';
+
     gap: 10px;
     padding: 10px;
     background-color: #c7f2ff;
-    }
-
-    div.gallery{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    div.gallery-item img{
-        width: auto;
-    }
-    .text{
-        background-color: #c6f2ff;
-        width: 100%;
-        height: 100px;
-    }
-
-    h1{
-        padding: 50px;
-        text-align: center;
-    }
-    .navbar{
-    }
-    .navbar ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #93e6ff;
-        align-items: center;
+}
 
 
+}
+
+.logo{
+    grid-area: logo;
+
+}
+.logo img{
+    background-color: #93e6ff;
+    width: 192px;
+    height: 89px;
+}
+.logo img:hover{
+    background-color: #7ae1ff;
+}
+
+.navbar{
+    grid-area: nav;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #93e6ff;
+    align-items: center;
+
+}
+.navbar ul,img{
+    float: left;
+}
+
+.navbar ul li{
+    float: left;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+}
 
 
-    }
-    img{
-        background-color: #93e6ff;
-        width: 193px;
-        height: 140px;
-    }
-    .navbar ul,img{
-        float: left;
-    }
-
-    .navbar ul li{
-        float: left;
-
-    }
-    .roboto-slab-navbar-ul-li {
-        font-family: "Roboto Slab", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .navbar ul li a{
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 61px 38px;
-        text-decoration: none;
-        font-family: "Roboto Mono", "Times New Roman", serif;
 
 
-    }
+.navbar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    text-decoration: none;
 
-    .navbar ul li a:hover{
-        background-color: #7ae1ff;
-    }
 
 
+}
+
+.navbar ul li a:hover{
+    background-color: #7ae1ff;
+}
+.header {
+    padding: 50px;
+    text-align: center;
+    grid-area: header;
+}
 
     .content{
-        width: 100%;
-
+        width: 80%;
     }
     .content p{
         text-align: center;
         background-color: #BBF2FF;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 16px;
+        padding: 26px;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+
     }
 
-    .content img{
+    .image img{
         text-align: center;
+        width: 193px;
+        height: 140px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         gap: 16px;
     }
-
-
-
-
