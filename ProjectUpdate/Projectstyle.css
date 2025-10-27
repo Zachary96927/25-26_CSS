@@ -5,7 +5,7 @@ body{
     box-sizing: border-box;
     margin: 0;
 }
-
+/* Gallery start */
 div.gallery{
     display: flex;
     flex-wrap: wrap;
@@ -13,11 +13,13 @@ div.gallery{
 }
 div.gallery-item img{
     width: 100px;
+    /* Gallery end */
+    /* Container start */
 
 .grid-container{
     display: grid;
     grid-template-areas:
-   'home nav nav nav nav nav nav nav'
+   'logo nav nav nav nav nav nav nav'
    'header header header header header header header header'
    'text text text text text text text text';
 
@@ -25,10 +27,11 @@ div.gallery-item img{
     padding: 10px;
     background-color: #c7f2ff;
 }
+    /* Container end */
 
 
 }
-
+/* Logo and nav */
 .logo{
     grid-area: logo;
 
@@ -67,48 +70,64 @@ div.gallery-item img{
 
 }
 
-
-
-
 .navbar ul li a{
     display: block;
     color: white;
     text-align: center;
     padding: 35px;
     text-decoration: none;
-
-
-
 }
 
 .navbar ul li a:hover{
     background-color: #7ae1ff;
 }
-.header {
+/* Logo and nav */
+/* Header */
+.header{
     padding: 50px;
     text-align: center;
     grid-area: header;
 }
+.header h1{
+    text-align: center;
 
-    .content{
-        width: 80%;
-    }
-    .content p{
-        text-align: center;
-        background-color: #BBF2FF;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 26px;
-        font-family: "Josefin Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
+}
+/* Header */
+/* content start*/
+.welcome{
+    width: 80%;
+}
+.welcome p {
+    text-align: center;
+    background-color: #BBF2FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 26px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 
-    }
+.content{
+    width: 80%;
+}
+.content dl dd{
+    text-align: center;
+    background-color: #BBF2FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 26px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 
-    .image img{
+/* content end*/
+
+.image img{
         text-align: center;
         width: 193px;
         height: 140px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         gap: 16px;
-    }
+}
