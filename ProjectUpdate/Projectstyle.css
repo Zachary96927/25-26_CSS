@@ -16,7 +16,7 @@ body {
         grid-template-areas:
             'logo nav nav nav nav nav nav nav nav'
             'header header header header header header header header header'
-            'welcome welcome welcome welcome welcome welcome welcome welcome welcome'
+            'content content content content content content content content content'
             'image image image image image image image image image';
         gap: 0px;
         padding: 0px;
@@ -33,13 +33,18 @@ body {
 /* Logo and nav */
 .logo {
     grid-area: logo;
-
+  display: flex;
+  allign-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .logo img {
     background-color: #93e6ff;
     width: 192px;
     height: 89px;
+  display: block;
 }
 
 .logo img:hover {
@@ -65,11 +70,11 @@ body {
 
 
 .navbar ul li {
-    float: left;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+  margin: 0;
 
 }
 
@@ -77,7 +82,7 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 25px 20px;
     text-decoration: none;
 }
 
@@ -103,7 +108,7 @@ body {
 .welcome {
     width: 80%;
   max-width: 800px;
-  grid-area: welcome;
+  grid-area: content;
   display: flex;
   justifiy-content: center;
  
@@ -121,18 +126,20 @@ body {
 }
 
 .content {
-    width: 80%;
+    width: 100%;
+  grid-area: welcome;
 }
 
 .content dl dd {
-    text-align: center;
     background-color: #BBF2FF;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 26px;
+    padding: 6px;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+.content dl dd strong{
+  font-weight: bold;
 }
 
 /* content end*/
@@ -145,6 +152,3 @@ body {
     height: 210px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
-
-
