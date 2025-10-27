@@ -16,7 +16,7 @@ body {
         grid-template-areas:
             'logo nav nav nav nav nav nav nav nav'
             'header header header header header header header header header'
-            'content content content content content content content content content'
+            'welcome welcome welcome welcome welcome welcome welcome welcome welcome'
             'image image image image image image image image image';
         gap: 0px;
         padding: 0px;
@@ -108,7 +108,7 @@ body {
 .welcome {
     width: 80%;
   max-width: 800px;
-  grid-area: content;
+  grid-area: welcome;
   display: flex;
   justifiy-content: center;
  
