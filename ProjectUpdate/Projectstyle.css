@@ -152,3 +152,12 @@ body {
     height: 210px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+#contact{
+  padding: 6px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+#contact td, th{
+  padding: 5px;
