@@ -1,6 +1,6 @@
 body {
     background-color: #C6F2FF;
-  margin:0;
+    margin:0;
 }
 
 * {
@@ -8,24 +8,24 @@ body {
 }
 
 
-    /* Container start */
+/* Container start */
 
-  .grid-container {
-        display: grid;
-        grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
             'logo nav nav nav nav nav nav nav nav'
             'header header header header header header header header header'
             'content content content content content content content content content'
             'image image image image image image image image image';
-        gap: 0px;
-        padding: 0px;
-        background-color: #c7f2ff;
-        justify-items: center;
-        align-items: center;
-    }
+    gap: 0;
+    padding: 0;
+    background-color: #c7f2ff;
+    justify-items: center;
+    align-items: center;
+}
 
-    /* Container end */
+/* Container end */
 
 
 
@@ -33,18 +33,17 @@ body {
 /* Logo and nav */
 .logo {
     grid-area: logo;
-  display: flex;
-  allign-items: center;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .logo img {
     background-color: #93e6ff;
     width: 192px;
     height: 89px;
-  display: block;
+    display: block;
 }
 
 .logo img:hover {
@@ -62,8 +61,8 @@ body {
     overflow: hidden;
     background-color: #93e6ff;
     align-items: center;
-  justify-content: center;
-  display: flex;
+    justify-content: center;
+    display: flex;
 
 }
 
@@ -74,7 +73,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  margin: 0;
+    margin: 0;
 
 }
 
@@ -93,7 +92,7 @@ body {
 /* Logo and nav */
 /* Header */
 .header {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
     grid-area: header;
 }
@@ -107,11 +106,10 @@ body {
 /* content start*/
 .welcome {
     width: 80%;
-  max-width: 800px;
-  grid-area: content;
-  display: flex;
-  justifiy-content: center;
- 
+    max-width: 800px;
+    grid-area: content;
+    display: flex;
+
 }
 
 .welcome p {
@@ -127,7 +125,7 @@ body {
 
 .content {
     width: 100%;
-  grid-area: content;
+    grid-area: content;
 }
 
 .content dl dd {
@@ -139,12 +137,12 @@ body {
     font-style: normal;
 }
 .content dl dd strong{
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* content end*/
 .image{
-  grid-area: image;
+    grid-area: image;
 }
 .image img {
     text-align: center;
@@ -153,11 +151,12 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #contact{
-  padding: 6px;
+    padding: 6px;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
-#contact td, th{
-  padding: 5px;
+#contact td, th {
+    padding: 5px;
+}
